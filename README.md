@@ -1,2 +1,2 @@
-# Python-proofs
+# Python Proofs
 Repository for Python concept proofs
