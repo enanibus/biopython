@@ -8,8 +8,8 @@
 #   3. translates sequence in all six frames
 #   4. saves translations into a single text file
 
-### In the code below I used “#” for regular comments 
-## and “###” for comments intended just for you as students of this course.
+# In the code below I used # for regular comments
+# and ### for comments intended just for you as students of this course.
 
 ### The objective of this exercise is for you to practise:
 ### 1. all previous concepts
