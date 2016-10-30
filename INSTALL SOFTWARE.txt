@@ -1,0 +1,96 @@
+Estos son notas sobre software que podéis instalar en vuestros
+ordenadores, y que permitirán que podáis hacer todo lo que cubriremos.
+
+1. Python:
+
+   1.1 python, v.3 (o sea, 3.5). https://www.python.org/downloads/ (si
+   usáis Linux es posible que o lo tengáis ya, o sea sencillo instalarlo
+   con un package manager)
+
+   1.1.1. Si usáis Windows:
+
+   	 1.1.1.1 En la instalación hay que hacer QUE PYTHON SE AÑADA AL
+   	 PATH. En el instalador eso por defecto no está puesto; HAY QUE
+   	 MARCAR ESA OPCIÓN: en la segunda (o tercera) ventana, en el
+   	 instalador, hay qye irse abajo y habilitar "Add Python 3.5 to
+   	 PATH".
+
+	 1.1.1.2 Con eso, dad a "Customize Installation". Es MUY
+   	 RECOMENDABLE modificar el path, lo que pone en "Customize install
+   	 location". Mi recomendación es que instaléis directamente en
+   	 "C:\Python\Python35". (La opción que el instalador usa por
+   	 defecto generalmente funciona, pero a veces da problemas).
+
+	 1.1.1.3. Aseguraos de que hacéis "Install for all users". 
+
+	 1.1.1.4. Click en "Install"
+
+   1.1.2. Si usáis Linux, por favor instalad una versión completita, que
+   incluya IDLE y pip.
+
+   1.1.3. Si usáis Mac, es posible que ya esté instalado. Si no, ver
+   instrucciones en la página de Python. 
+
+
+ 1.2 PyMySQL (https://github.com/PyMySQL/PyMySQL)
+  
+  Si python.exe está añadido al path, lo más sencillo es abrir una ventana
+  de comandos y teclear
+
+  pip install PyMySQL
+
+  Muy probablemente os diga, al terminar "You are using pip version 7.1.2
+  blablaba." Pues sí, haced el upgrade como indica:
+
+  python -m pip install --upgrade pip
+  
+
+  Si no, seguid las instrucciones de la página de PyMySQL.
+
+
+2. Editores. Alguno de los siguientes:
+
+   2.1 jEdit. http://www.jedit.org/  Requiree un Java reciente (v. 7 o posterior)
+
+   2.1. Kate, que es parte de KDE. (Kate no es imprescindible, pero puede
+   ser conveniente, sobre todo porque es lo que usará Luis del Peso para
+   editar código en Python. Por supuesto, podéis editar con otro editor, o
+   con IDLE).
+
+   2.1.1. En Linux es relativamente sencillo usando el package manager de
+   la distribución respectiva. 
+   
+   2.1.2. En Windows, bajar el instalador de KDE:
+   http://windows.kde.org/download.php. Iniciar el proceso de instalación
+   y seleccionar estos dos paquetes (otros si quereis, pero los que
+   necesitamos son) kate kate-contextmenu. Sí, eso baja una larga lista de
+   dependencias.
+
+   2.1.3. En Mac: hay muchos editores de calidad, como TextMate, Sublime
+   Text (también Windows y Linux), Light Table (Windows y Linux también),
+   etc.
+   
+
+3. Programas para ver diferencias: diffs.
+
+3.1 Kdiff3. Aunque kdiff3 "es parte de KDE", no lo necesita y se puede
+   instalar aunque no se instale kde)
+   http://sourceforge.net/projects/kdiff3/files/kdiff3/0.9.98/ De nuevo,
+   en Linux el package manager de vuestra distro lo hará fácil. En Windows
+   o Mac ved la página. En Windows bajad la versión apropiada para vuestra
+   arquitectura (32 o 64 bits, etc)
+
+   Tampoco es imprescindible, pero es conveniente y cómodo.
+
+
+4. R y RStudio.
+
+   3.1 Los binarios se bajan de aquí: http://cran.r-project.org/bin/. 
+   De nuevo, en Linux es posible que vuestra distro lo haga aún más
+   sencillo. En Windows y Mac, seguid las instrucciones de arriba.
+
+   3.2. RStudio: lo que queremos es el Desktop, Open Source Edition:
+   http://www.rstudio.com/products/rstudio/download/
+
+
+

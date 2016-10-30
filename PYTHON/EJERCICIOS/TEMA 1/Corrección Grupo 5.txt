@@ -1,0 +1,17 @@
+### My_group: g2 (Juan Enríquez, Juan Escudero, Pablo Villoslada)
+### Corrected group: g5 
+## 1.Comentado
+	Puntuación:2
+	Los comentarios añadidos son de gran ayuda para el corrector y están escritos con el vocabulario adecuado
+
+## 2. Lógica
+	Puntuación: 2
+	Los elementos introducidos siguen un orden correcto. Para entender la lógica son de gran ayuda los comentarios añadidos.
+
+## 3. Indentación, nombres de variables, facilidad de lectura
+	Puntuación: 1
+	Algunos elementos introducidos (nombres de variables, operadores...) son desconocidos para los correctores. La compactación del script podría ser mayor, lo que lo haría más facil su lectura.
+
+## 4. Correcto
+	Puntuación: 2
+	El script es capaz de otorgar los datos pedidos y está correctamente explicado.

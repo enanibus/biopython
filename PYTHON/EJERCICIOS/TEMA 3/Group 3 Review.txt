@@ -1,0 +1,24 @@
+### My_group: g2 (Juan Enríquez, Juan Escudero, Pablo Villoslada)
+### Corrected group: g3
+###Ejercicio: Hoja de entregas, 3, ejercicio 1
+###Se evaluarán los siguientes apartados: Comentarios, Lógica, Lectura y si es Correcto
+## 1.Comentado
+	Puntuación: 2
+	Los comentarios son de gran ayuda para comprender que se busca con cada comando introducido. Es especial están muy bien las aclaraciones respecto a los bucles y lo que se busca introduciendo cada uno de ellos (la respuesta esperada del programa). A pesar de que hay entradas que no se explican del todo (la finalidad de introducir un string o diccionario vacío), se puede deducir su utilidad por alguien familiarizado con Python.
+
+## 2. Lógica
+	Puntuación: 2
+	El script consigue los objetivos de una manera ordenada, similar a la del script proorcionado por el profesor. Nuestra interpretación respecto al último apartado del ejercicio fue diferente, pero esta no deja de ser correcta y lógica.
+La apertura de los archivos se hace conjunta al principio; quizá algo menos lógico que abrir cada archivo por separado para obtener la información requerida en cada uno. 
+
+## 3. Indentación, nombres de variables, facilidad de lectura
+	Puntuación: 1
+	Algún error en la nomenclatura de las variables (confusión de un diccionario con un string).
+La introducción de la variable ORF complica un poco la lectura, no sabemos la finalidad de su introducción. 
+Introducen el operador "locals" del cual desconocemos su significado.
+
+## 4. Correcto
+	Puntuación: 2
+	El programa consigue el objetivo del ejercicio, si bien no otorga la secuencia de la proteína en la nomenclatura de tres letras. A pesar de ello y por considerar el script de alta dificultad, se le otorga la máxima puntuación en este apartado.
+
+##Total: 7 puntos

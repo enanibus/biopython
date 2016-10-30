@@ -1,0 +1,22 @@
+####Mi grupo: Grupo_2
+####Grupo evaluado: Grupo_7
+####Ejercicio: Hoja de entregas 2, ejercicio 2.
+####Se evaluaran los siguientes apartados: Comentarios, Logica, Lectura y si es Correcto.
+###Comentarios: 1 punto
+##Los comentarios son claros y explicativos
+###Logica: 1 punto
+##Sigue una estructura logica pero mejorable en los siguientes puntos:
+#El bucle while podria ser sustituido por un bucle for de una manera mas intuitiva y logica a nuestro juicio. Creando una lista con el 
+#abecedario y corriendo el bucle hasta que se cumpla la presencia de una de las letras ajenas al DNA y entonces cerrando el propgrama con exit(). 
+#Si no se cumple en todas las letras el programa seguiria adelante.
+#El segundo if dentro del bucle while podria ser un simple else o solamente una linea normal de texto, puesto que si se produce la salida del bucle es porque se ha cumplido la condicion de que tenemos DNA o RNA.
+#Para calcular los porcentajes de nucleotidos se puede definir un bucle y asi hacerlo en menor espacio, solo hay que definir una lista e ir cambiando de nucleotido por la lista. Tambien se podria hacer asi para los dinucleotidos.
+#No comprendemos por que en vez de en tanto por cien, el calculo de dinucleotidos esta en tanto por cincuenta.
+###Indentacion, nombres de variables y facilidad de lectura: 1 punto
+##En general consideramos que la lectura es sencilla e intuitiva
+###Correcto: 3 puntos
+##Consideramos por la dificultad del programa que, a pesar de no ser completamente funcional o no cumplir con todos los objetivos del ejercicio, el codigo es funcional y correcto en su mayoria. Algunos errores:
+#El programa no se cierra (simplemente deja de correr) cuando intgroduces una secuencia diferente a DNA o RNA. Falta escribir una linea con la funcion >exit().
+#Si introducimos un RNA, los porcentajes no son correctos para las Ts, porque han referido la cuenta de Ts a la primera secuencia introducida, no a la traducida a DNA.
+#El contaje de dinucleotidos es incorrecto, por ejemplo al introducir AAAA el porcentaje del dinucleotido AA es 20%, en vez de 100% que seria lo correcto.
+###########Total: 6 puntos

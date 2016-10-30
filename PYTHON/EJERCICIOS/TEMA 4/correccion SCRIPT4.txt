@@ -1,0 +1,30 @@
+####Mi grupo: Grupo_2
+####Grupo evaluado: Grupo_4
+####Ejercicio: Hoja de entregas 4, ejercicio 2.
+####Se evaluaran los siguientes apartados: Modular, Comentarios, Logica, Lectura y si es Correcto.
+
+###Modular: 1/2 puntos
+##El programa hace uso de funciones, sin embargo podría hacerlo de manera más sencilla y compacta.
+#En la funcion complementSequence l38, podrían haber creado la reversa complementaria directamente, y no hacerlo en el cuerpo principal del programa como hacen (l78)
+
+
+###Comentarios: 0.5/0.5 punto
+##Los comentarios son correctos y explicativos.
+
+
+###Lógica: 1/2 punto
+##Sigue una estructura logica pero mejorable en los siguientes puntos:
+#En la l48 define la variable i, a nuestro juicio innecesario, pues podría haber utilizado k directamente.
+
+
+###Indentacion, nombres de variables y facilidad de lectura: 0.5/0.5 punto
+##Consideramos que la lectura es en general ordenada e intuitiva.
+
+
+###Correcto:4/4 puntos
+##El codigo es funcional y correcto y entrega los resultados esperados. 
+
+
+###########Total: 6.5/8 puntos
+
+
