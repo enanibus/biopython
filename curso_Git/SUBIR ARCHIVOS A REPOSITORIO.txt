@@ -1,0 +1,9 @@
+git add .
+git commit -m "inclusion de lo que sea que subes"
+git push -u origin master
+
+Todo ello estando dentro del directorio que quieres usar/subir
+
+git reset --hard para ir al ultimo commit que es donde estabas seguro por ultima vez
+
+git stash para resetear la working copy al ultimo commit 

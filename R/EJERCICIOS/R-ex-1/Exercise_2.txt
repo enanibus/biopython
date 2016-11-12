@@ -1,0 +1,4 @@
+read.table("d1.txt", header = TRUE)
+read.table("d2.txt", header = TRUE, sep = "\t")
+read.table("d3.txt", sep = "\t")
+read.table("d4.txt", fill = TRUE)

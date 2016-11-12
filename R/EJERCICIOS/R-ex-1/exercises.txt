@@ -1,0 +1,44 @@
+EXERCISE 1
+1.1
+#setwd("~/R-ex-1")
+rm(list = ls())
+x <- seq(123, 297, by = 3.5)
+summary(x)
+1.2. 
+1.2.1. There are several options to do it, but for instance we could do:
+-Just double clicking on the .R file
+-Paste the code in the RConsole and press enter
+-Open file and run it in the console
+1.2.2. 
+1.2.3.
+
+EXERCISE 2
+read.table("d1.txt", header = TRUE)
+read.table("d2.txt", header = TRUE, sep = "\t")
+read.table("d3.txt", sep = "\t")
+read.table("d4.txt", fill = TRUE)
+
+EXERCISE 3
+1. Go to Packages --> Search for "OncoSimulR" --> View at the right upper corner the version installed --> 2.4.0
+
+2. Same procedure --> 2.1-3
+
+3. You need to call it (after installing it, of course) by typing: "library(OncoSimulR)"
+Once you have done it, you will be able to execute OncoSimulIndiv function directly from the R console
+
+EXERCISE 4
+1. Character(0)
+
+2. New help window containing "car::scatter3d" help page (no ouput shown in the console)
+
+3. apropos("scatter3d")--> [1] "scatter3d"
+helP.search("search3d") --> Same output than 2.
+
+4. 
+
+5.
+
+6. apropos. Yes, you can miss it if you don't call previously the right package.
+
+7.  
+

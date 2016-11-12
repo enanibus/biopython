@@ -1,0 +1,5 @@
+#setwd("R-ex-1")
+rm(list = ls())
+x <- seq(123, 297, by = 3.5)
+summary(x)
+
