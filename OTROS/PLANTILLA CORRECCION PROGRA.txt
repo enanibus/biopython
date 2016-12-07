@@ -1,0 +1,29 @@
+####Mi grupo: Grupo_2
+####Grupo evaluado: Grupo_-
+####Ejercicio: Hoja de entregas -, ejercicio -.
+####Se evaluaran los siguientes apartados: Comentarios, Logica, Lectura y si es Correcto.
+
+###Comentarios: 1 punto
+##Los comentarios son explicativos pero mejorables en general.
+#En ocasiones confunde listas con diccionarios
+
+
+###Logica: 1 punto
+##Sigue una estructura logica pero mejorable en los siguientes puntos:
+#Utiliza replace en vez de strip().
+#Se han utilizado elementos ajenos a los impartidos en clase, lo cual hace difícil la comprensión por nuestra parte.
+#
+#
+#
+
+###Indentacion, nombres de variables y facilidad de lectura: 2 punto
+##Consideramos que la lectura es en general ordenada e intuitiva.
+
+
+###Correcto:2 puntos
+##El codigo es funcional y correcto y entrega los resultados esperados. 
+
+
+###########Total: 6 puntos
+
+

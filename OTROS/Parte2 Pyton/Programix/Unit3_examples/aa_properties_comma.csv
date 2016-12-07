@@ -1,0 +1,21 @@
+Amino Acid,3-letter code,1-letter code,Mol.wt (g/mol),Accesible surface area,Hydrophobicity,Relative mutability,Surface probabiblity
+Alanine,Ala,A,89.1,115,-0.4,100,62
+Arginine,Arg,R,174.2,225,-0.59,65,99
+Asparagine,Asn,N,132.1,160,-0.92,134,88
+Aspartate,Asp,D,133.1,150,-1.31,106,85
+Cysteine,Cys,C,121.2,135,0.17,20,55
+Glutamate,Glu,E,147.1,190,-1.22,102,82
+Glutamine,Gln,Q,146.2,180,-0.91,93,93
+Glycine,Gly,G,75.1,75,-0.67,49,64
+Histidine,His,H,155.2,195,-0.64,66,83
+Isoleucine,Ile,I,131.2,175,1.25,96,40
+Leucine,Leu,L,131.2,170,1.22,40,55
+Lysine,Lys,K,146.2,200,-0.67,56,97
+Methionine,Met,M,149.2,185,1.02,94,60
+Phenylalanine,Phe,F,165.2,210,1.92,41,50
+Proline,Pro,P,115.1,145,-0.49,56,82
+Serine,Ser,S,105.1,115,-0.55,120,78
+Threonine,Thr,T,119.1,140,-0.28,97,77
+Tryptophan,Trp,W,204.2,255,0.5,18,73
+Tyrosine,Tyr,Y,181.2,230,1.67,41,85
+Valine,Val,V,117.1,155,0.91,74,46

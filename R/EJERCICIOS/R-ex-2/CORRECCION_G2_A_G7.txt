@@ -1,0 +1,35 @@
+####My_group: Group_2
+####Evaluated_group: Group_7
+####Exercise: Graphics
+####All 9 sections will be evaluated.
+
+###The data: Data reading and manipulation. Correct and clear: 
+YES (2 points)
+
+###Figure 1a, boxplot: Correct and clear.
+YES (3 points)
+
+###Figure 1b, scatterplot with symbols: Correct and clear.
+YES (3 points)
+
+###Section 3, Figure 2 (conditioning plot). Correct
+YES (2 points)
+
+###Section 3, Figure 3 (conditioning plot with smooth line). Correct
+YES (2 points)
+
+####Section 3, Figure 4 (conditioning plot with regression line). Correct
+YES (2 points)
+
+###Section 3, Figure 5 (conditioninG plot with ggplot2). Correct and clear.
+YES (3 points)
+
+###Section 4, Figure 6 (histogram of p values). Correct and clear.
+YES (2 points)
+
+###Section 5, Figure 7 (scatterplot of p values). Correct and clear
+YES (2 points)
+
+###The comments are only used when needed. It is used a command line of more than 80 characters, but it is just once, so the data can be read properly.
+
+###Total points: 21/21 (SCORE = 10)

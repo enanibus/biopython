@@ -1,9 +1,0 @@
-1. Go to Packages --> Search for "OncoSimulatorR" --> View at the right upper corner the version installed --> 2.4.0
-
-2. Same procedure --> 2.1-3
-
-3. You need to call it (after installing it, of course) by typing: "library(OncoSimulR)"
-Once you have done it, you will be able to execute OncoSimulIndiv function directly from the R console
-
-
-

@@ -1,0 +1,131 @@
+###Exercise 1:
+#setwd("~/R-ex-1")
+#1.1.1:
+rm (list = ls())
+#1.1.2:
+x <- seq (from = 123, to = 297, by = 3.5)
+#1.1.3:
+summary(x)
+#1.2.1: There are several options to do it, but for instance we could do:
+-Just double clicking on the .R file
+-Paste the code in the RConsole and hit enter
+-Open file and run it in the console
+-source("sumx".R, echo = T, max.deparse.lenght = 99999)
+#1.2.2: File -> Open Script -> Select All -> Ctrl+R
+#1.2.3: We were not able to do it from Windows Powershell, it always returns some kind of error.
+
+###Exercise 2:
+#We could also have printed the result instead assigning it to a variable.
+#2.1:
+x <- read.table ("d1.txt", header = TRUE)
+x
+#2.2:
+y <- read.table ("d2.txt", header = TRUE, sep="\t")
+y
+#2.3:
+z <- read.table ("d3.txt", sep = "\t")
+z
+#2.4:
+r <- read.table ("d4.txt", header = TRUE, comment.char="@")
+r
+#Another alternative command for this last case woul be:
+r <- read.table ("d4.txt", header = TRUE, fill = TRUE)
+r
+
+###Exercise 3:
+#3: source("https://bioconductor.org/biocLite.R")
+#   biocLite("OncoSimulR")
+#   install.packages("car")
+#3.1: packageVersion("OncoSimulR") -> 2.4.0
+Alternatively: Go to Packages --> Search for "OncoSimulR" --> View at the right upper corner the version installed --> 2.4.0
+#3.2: packageVersion("car") -> 2.1.3
+#3.3: You need to call it (after installing it, of course) by typing: "library(OncoSimulR)"
+Once you have done it, you will be able to execute OncoSimulIndiv function directly from the R console
+
+###Exercise 4:
+#4.1: Character (0)
+#4.2: New help window containing "car::scatter3d" help page/link (no ouput shown in the console)
+#4.3: apropos("scatter3d")--> [1] "scatter3d"
+help.search("search3d") --> Same output than 2.
+#4.4: Yes, apropos() search functions that contain the word "scatter3d" in its name, and because that functions are not loades since we type "library(car)" in section 4.1, they do not appear. 
+#4.5: help.search searches base R and all packages that you have installed on your computer, while apropos only searches
+base R and the packages you have loaded in the current session.
+#4.6: apropos(). Yes, you can miss it if you don't call previously the right package.
+#4.7: Yes, using help.search("scatter3d", fields = "alias"), as it searches all that contains part of the word "scatter3d" 
+
+###Exercise 5:
+#5.1:
+x <- 97
+y <- 95
+save(x, file = "oneObject.RData")
+#5.2: save.image()saves the session in a .RData file (hidden) 
+
+###Exercise 6:
+#6.1:
+hr <- c (87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+age <- rep(c(11, 63, 40, 47), times = c(3, 2, 4, 1))
+#6.2:
+hr45 <- hr [(age < 45)]
+#6.3:
+hr2 <- c (Juan = hr[age==63][1], Ana = hr[age==63][2], Carmen = hr[age==45])
+#6.4:
+hr2 [c("Juan", "Ana")]
+#6.5:
+x <- c(age[4], age[5], age[10])
+y <- c(hr[4], hr[5], hr[10])
+m1 <- cbind (x, y)
+rownames(m1) <- c("Juan", "Ana", "Carmen")
+colnames(m1) <- c("age", "hr")
+m1
+#6.6:
+m2 <- cbind.data.frame (x, y)
+rownames(m2) <- c("Juan", "Ana", "Carmen")
+colnames(m2) <- c("age", "hr")
+m2
+#6.7:
+z <- names(hr2)
+m3 <- cbind.data.frame (x, y , z)
+colnames(m3) <- c("age", "hr", "name")
+m3
+#6.8:
+m1[1,2]
+m1["Juan","hr"]
+#6.9:
+m1["Juan",]
+#6.10:
+m2["Ana", "hr"]
+#6.11:
+m3[2,2]
+#6.12:
+m3[2,]
+#6.13:
+m3[which(m3[,1]<60),]
+#6.14:
+m2[which(m2[,1]<60),]
+#6.15:
+m4 <- cbind (hr, age)
+m5 <- m4[which(m4[,2]>15),]
+m5
+#6.16: No.
+#6.17:
+sex <- c("M", "F")[c(1, 2, 1, 1, 2, 2, 1, 1, 2, 2)]
+sex2 <- sex[age>15]
+m6 <- cbind (m5, sex2)
+m6
+#6.18:
+sex3 <- c(sex[age==63], sex[age==45])
+m7 <- cbind (m2, sex3)m5
+colnames(m7) <- c("age", "hr", "sex")
+m7
+
+###Exercise 7:
+#7.1:
+hr <- c (87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+age <- c (rep(11,3), rep(63,2), rep(40,4), 45)
+age1 <- sort(age)
+hr1 <- hr[order(age)]
+hr2 <- c (sort (hr1[1:3]), sort (hr1[4:7]), hr1[8],sort (hr1[9:10]))
+m <- cbind (hr2, age1)
+colnames(m) <- c("age", "hr")
+m1 <- m[which(m[,2]>15),]
+m1

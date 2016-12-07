@@ -7,8 +7,9 @@ summary(x)
 1.2. 
 1.2.1. There are several options to do it, but for instance we could do:
 -Just double clicking on the .R file
--Paste the code in the RConsole and press enter
+-Paste the code in the RConsole and hit enter
 -Open file and run it in the console
+-source("sumx".R, echo = T, max.deparse.lenght = 99999)
 1.2.2. 
 1.2.3.
 
@@ -32,13 +33,50 @@ EXERCISE 4
 2. New help window containing "car::scatter3d" help page (no ouput shown in the console)
 
 3. apropos("scatter3d")--> [1] "scatter3d"
-helP.search("search3d") --> Same output than 2.
+help.search("search3d") --> Same output than 2.
 
-4. 
+4. apropos() returns a character vector giving the names of objects in the search list matching (as a regular expression) what. After loading package car, which contains function scatter3d, you get ine result matching.
 
-5.
+5. help.search searches base R and all packages that you have installed on your computer, while apropos only searches
+base R and the packages you have loaded in the current session.
 
 6. apropos. Yes, you can miss it if you don't call previously the right package.
 
 7.  
 
+EXERCISE 5
+5.1. 
+x <- 97
+y <- 95
+save(x, file = "oneObject.RData")
+5.2 save writes an external representation of R objects to the specified file. The objects can be read back from the file at a later date by using the function load or attach (or data in some cases).
+save.image() is just a short-cut for ‘save my current workspace’, i.e., save(list = ls(all.names = TRUE), file = ".RData", envir = .GlobalEnv). It is also what happens with q("yes")
+
+EXERCISE 6
+hr <- c(87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+6.1.age <- rep(c(11, 63, 40, 47), times = c(3, 2, 4, 1))
+6.2.less45 <- age < 45
+hr45 <- hr[less45]
+hr45
+*Otra manera: hr45 <- hr[(age < 45)]
+6.3.hr2 <- c(Juan = 62, Ana = 69, Carmen =  76)
+6.4.hr2[c("Juan", "Ana")]
+6.5.m <- rbind(hr2, age[age < 45])
+colnames(m) <- c("Heart rate", "Age")
+rownames(m) <- c("Juan", "Ana", "Carmen") 
+6.6. 
+6.7.
+6.8.
+6.9.
+6.10.
+6.11.
+6.12.
+6.13.
+6.14.
+6.15. matrix1 <- cbind(hr[4:10], age[age > 15])
+      colnames(matrix1) <- c("hr", "age")
+6.16.
+6.17.
+6.18.
+
+EXERCISE 7

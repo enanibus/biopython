@@ -1,0 +1,30 @@
+####Mi grupo: Grupo_2
+####Grupo evaluado: Grupo_7
+####Ejercicio: Hoja de entregas 2, ejercicio 2.
+####Se evaluaran los siguientes apartados: Comentarios, Logica, Lectura y si es Correcto.
+
+###Comentarios:_ punto
+##
+
+
+###Logica: _ punto
+##Sigue una estructura logica pero mejorable en los siguientes puntos:
+#
+#
+#
+#
+#
+
+###Indentacion, nombres de variables y facilidad de lectura: _ punto
+##En general consideramos que la lectura es sencilla e intuitiva
+
+
+###Correcto: _ puntos
+##Consideramos por la dificultad del programa que, a pesar de no ser completamente funcional o no cumplir con todos los objetivos del ejercicio, el codigo es funcional y correcto en su mayoria. Algunos errores:
+#
+#
+#
+#
+
+
+###########Total: _ puntos

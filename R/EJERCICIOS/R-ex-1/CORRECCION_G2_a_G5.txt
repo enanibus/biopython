@@ -1,0 +1,71 @@
+####My_group: Group_2
+####Evaluated_group: Group_5
+####Exercise: Scripts, data structures, reading data.
+####All 44 sections will be evaluated.
+
+
+###Exercise 1:
+#1.1.1: Correct 
+#1.1.2: Correct 
+#1.1.3: Correct (no comments needed) 
+#1.2.1: Correct 
+#1.2.2: Correct 
+#1.2.3: The way proposed does not work, but we all had problems to do it, so this section will not be marked.
+#POINTS: 5
+
+###Exercise 2:
+#2.1: Correct 
+#2.2: Correct 	
+#2.3: Correct, but the command "skip = 1" it is not necessary here. 
+#2.4: Correct. We like the alternative comand proposed. 
+#POINTS: 4
+
+###Exercise 3:
+#3.1: The version can be viewed in the ouput of the command but this might not be the simplest/easiest to do it. For instance they could have typed "packageVersion("OncoSimulR")" -> 2.4.0
+Alternatively: Go to Packages --> Search for "OncoSimulR" --> View at the right upper corner the version installed --> 2.4.0
+#3.2: Same than previous section
+#3.3: Correct (comments are unnecessary)
+#POINTS: 1
+
+###Exercise 4:
+#4.1: Correct
+#4.2: Correct
+#4.3: Correct
+#4.4: Correct
+#4.5: Incorrect. help.search searches base R and all packages that you have installed on your computer, while apropos only searches base R and the packages you have loaded in the current session.
+#4.6: Correct
+#4.7: Correct
+#POINTS: 6
+
+###Exercise 5:
+#5.1: Correct
+#5.2: Correct, although the explanation is not quite accurate
+#POINTS: 2
+
+###Exercise 6:
+#6.1: Correct
+#6.2: Correct, but it could be have done in just one command.
+#6.3: Correct
+#6.4: Incorrect, we want the result in just one output
+#6.5: Correct
+#6.6: Correct
+#6.7: Correct, but the way proposed is lousy
+#6.8: Correct
+#6.9: Correct
+#6.10: Correct. We like the alternative commands proposed.
+#6.11: Correct
+#6.12: Correct
+#6.13: Incorrect. We were looking for: m3[which(m3[,1]<60),]
+#6.14: Incorrect. Similar than in 6.13
+#6.15: Correct
+#6.16: Correct. We love the explanation.
+#6.17: Correct
+#6.18: Correct
+#POINTS: 15
+
+###Exercise 7: 
+#7.1: Correct. It is a very intuitive way, in fact, more than ours.
+#POINTS: 4
+
+###Overall score: 37/43
+###Grade: 8.6

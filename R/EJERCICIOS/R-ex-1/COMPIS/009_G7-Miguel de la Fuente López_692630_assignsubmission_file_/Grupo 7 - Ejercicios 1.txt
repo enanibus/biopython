@@ -1,0 +1,107 @@
+#Grupo 7 - Ejercicios 1. Miguel de la fuente. Guillermo Cano. Clara Concepción Galiana.
+
+#EJERCICIO 1
+
+rm ( list = ls () ) #1.1.1.Nos aseguramos de que no hay variables en el environment
+x <- seq (123, 297, 3.5) #1.1.2.Creamos la variable x que contenga la secuencia de 123 a 297 con salto de 3.5
+sum(x) #1.1.3.Hacemos el sumatorio de la secuencia de la variable x
+#1.2.1.Mediante el comando "Ctrl+Shift+Enter" o con el botón "run" de la pantalla del script
+#1.2.2.Desde R usaremos "source("nombredelscript.R")"
+#1.2.3.Desde la línea de comandos o consola tienes que invocar a R dándose el script como input
+
+#EJERCICIO 2
+
+#1
+Data <- read.table("AnotherDataSet.txt")
+Data$V4[Data$V4==23.4] <- NA
+#2
+Data <- read.table("AnotherDataSet.txt")
+Data$V4[Data$V4==23.4] <- NA
+Data$V2[Data$V2==14] <- NA
+Data <- sapply(Data, as.character)
+Data[is.na(Data)] <- " "
+#3
+Data <- read.table("AnotherDataSet.txt")
+Data$V4[Data$V4==23.4] <- NA
+Data$V2[Data$V2==14] <- NA
+Data <- sapply(Data, as.character)
+Data[is.na(Data)] <- " "
+Data <- Data[-1,]
+#4
+Data <- read.table("AnotherDataSet.txt")
+Data$V4[Data$V4==23.4] <- NA
+M <- list("@Hello, I created this file", Data, "@Good bye!")
+
+#EJERCICIO 3
+
+#3.1. En la página web de bioconductor, en detalles, es la 2.4.0
+#3.2. En el output que te da la consola de R una vez instalas el paquete, es la car_2.1-3
+#3.3. Tienes que cargar el paquete usando el comando library("nombredelpaquete")
+
+#EJERCICIO 4
+
+#4.1. Al hacer apropos("scatter3d") lo que obtienes es character(0)
+#4.2. Al hacer help.search("scatter3d”) en el output obtienes scatter3d {car}	y la ayuda
+#4.3. Como hemos cargado el paquete y la funcion scatter3d pertenece al mismo, al poner apropos("scatter3d") te devuelve las funciones que contengan esa palabra. Cuando pones help obtienes lo mismo que en el 4.2.
+#4.4. Si, al cargar el paquete tenemos ya en R las funciones
+#4.5. Si, mientras que apropos busca el nombre solo en la funcion, help.search lo busca de forma general
+#4.6. Aporpos, porque te lo busca solo en el nombre. No.
+#4.7. Si, con el argumento package de la funcion help.search
+
+#EJERCICIO 5
+
+x <- 97
+y <- 95
+save(x, file = "oneObject.RData")
+#Al usar save.image() se guarda todo el "workspace" en el archivo RData. Por lo que tambien estara el objeto "y" en este.
+
+#EJERCICIO 6
+
+#6.1.
+hr <- c(87, 78, 86, 62, 69, 69, 68, 67, 75, 76)
+age <- c(rep(11, 3), rep(63, 2), rep(40, 4), rep(47, 1))
+#6.2.
+rbind(hr, age)
+hr[age < 45]
+#6.3.
+hr2 <- hr[age > 45]
+nombres <- c("Juan", "Ana", "Carmen")
+names(hr2) <- nombres
+#6.4.
+hr2["Juan"]
+hr2["Ana"]
+#6.5.
+age2 <- age[age > 45]
+cbind(age2, hr2)
+#6.6.
+df <- data.frame(hr2, age2, nombres)
+#6.7.
+hr2.1 <- hr[age > 45]
+data <- rbind(hr2.1, age2, nombres)
+#6.8.
+data[1 ,2]
+#6.9.
+data[ ,1 ]
+#6.10.
+df[2, 1]
+#6.11.
+df[2, 1]
+#6.12.
+df[2, ]
+#6.13.
+df2 <- df[1:2, 1:2]
+df2
+#6.14.
+df2 <- df[1:2, 1:2]
+df2
+#6.15.
+df
+hr3 <- hr[age > 15]
+age3 <- age[age > 15]
+matriz <- cbind(hr3, age3)
+#6.16. No, ya que el vector de sexo tiene 11 valores, mientras que los de edad y hr tienen 10
+#6.17 y 6.18 al no estar relacionados ambos vectores, estos ejercicios no se pueden realizar
+
+#EJERCICIO 7
+
+matriz[ order(matriz[,2], matriz[,1]), ]
