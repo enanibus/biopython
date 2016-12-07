@@ -1,0 +1,1 @@
+lineas <- scan("permafrost.zip", skip=1, what=list(""))
