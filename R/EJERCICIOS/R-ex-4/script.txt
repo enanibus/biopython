@@ -1,1 +1,108 @@
-lineas <- scan("permafrost.zip", skip=1, what=list(""))
+OPCION 1
+getwd()
+setwd("C:/Users/JET/Documents/BIOQUIMICA/4º/HPBBM/R/EJERCICIOS/R-ex-4/permafrost/")
+files <- dir()
+sequences <- sapply(files, function(x) scan(x, what = ""))
+procaryote <- sequences [grep("T[AG][AG]", sequences)]
+non_procaryote <- sequences [grep("T[AG][AG]", sequences, invert = TRUE)]
+l.procaryote <- sapply(procaryote, function(x) nchar(x))
+l.non_procaryote <- sapply(non_procaryote, function(x) nchar(x))
+summary(l.procaryote)
+summary(l.non_procaryote)
+Tfreq <- function(seq){
+  seq.T <- gsub("T", "", seq) 
+  T <- nchar(seq) - nchar(seq, T) 
+  return(T/nchar(seq))
+}
+T.procaryote <- sapply(procaryote, function(x) Tfreq(x))
+T.non_procaryote <- sapply(non_procaryote, function(x) Tfreq(x))
+summary(T.procaryote)
+summary(T.non_procaryote)
+
+Tfreq  te quita todas las T de seq. Entonces luego calculas las diferencias entre la longitud antes y después de la función y así obtienes el número de Ts.
+
+OPCION 2
+getwd()
+setwd("C:/Users/JET/Documents/BIOQUIMICA/4º/HPBBM/R/EJERCICIOS/R-ex-4/permafrost/")
+files <- dir()
+sequences <- sapply(files, function(x) scan(x, what = ""))
+procaryote <- sequences [grep("T[AG][AG]", sequences)]
+non_procaryote <- sequences [grep("T[AG][AG]", sequences, invert = TRUE)]
+l.procaryote <- sapply(procaryote, function(x) nchar(x))
+l.non_procaryote <- sapply(non_procaryote, function(x) nchar(x))
+summary(l.procaryote)
+summary(l.non_procaryote)
+## install.packages("stringr")   ## Install the package if you do not have it
+library(stringr)
+Tfreq_stop <- str_count(procaryote, "T")/nchar(procaryote)
+summary(Tfreq_stop)
+Tfreq_non_stop <- str_count(non_procaryote, "T")/nchar(non_procaryote)
+summary(Tfreq_non_stop)
+
+OPCION 3
+lengthOfSequence <- function (seq) 
+return(nchar(seq))
+
+frequencyOfT <- function(seq) {
+vector <- seq
+table <- c(vector)
+freq <- match("T", table)
+cat(class(freq))
+cat("\n")
+cat("freq: ", freq)
+return(freq / lengthOfSequence(seq))
+}
+
+getwd()
+setwd("permafrost")
+ x <- dir()
+ for (f in x) { 
+ 	seq <- scan(f, what="")
+ 	l <- lengthOfSequence(seq)
+ 	fr <- frequencyOfT(seq)
+ 	cat("Leido fichero: ", f)
+ 	cat("\n")
+ 	cat(seq)
+ 	cat("\n")
+ 	cat("longitud: ", l)
+ 	cat("\n")
+ 	cat("frecuencia: ", fr)
+ 	cat("\n")
+ }
+
+#####lineas <- apply(scan("x", skip=1, what=list("")))
+
+OPCION 4
+#Exercise 4: Permafrost and stop codons programming practice
+#Group 2
+## install.packages("stringr") ## Install the package if you do not have it
+library(stringr)
+#To work inside the directory that contains the required data:
+#getwd()
+#setwd("permafrost")
+###1:
+#Assign all the sequences to a variable "files": 
+files <- dir()
+#sapply is used to scan all these sequences contained in "files":
+sequences <- sapply(files, function(x) scan(x, what = ""))
+#Establish the three stop codons:
+stopCodons <- c("TAA", "TAG", "TGA")
+#Define a function that returns the sequences of the procariotes:
+###2: 
+#Sequences with and without stop codons are splitted using 
+#regular expressions:
+procaryote <- sequences [grep("T[AG][AG]", sequences)]
+non_procaryote <- sequences [grep("T[AG][AG]", sequences, invert = TRUE)]
+#Now the lenght of each sequence is obtained:
+l.procaryote <- sapply(procaryote, function(x) nchar(x))
+l.non_procaryote <- sapply(non_procaryote, function(x) nchar(x))
+##Calculation of the "T" frequency in each type of sequence:
+Tfreq_stop <- str_count(procaryote, "T")/nchar(procaryote)
+Tfreq_non_stop <- str_count(non_procaryote, "T")/nchar(non_procaryote)
+###3:
+#Summaries of the lenght of the sequences:
+summary(l.procaryote)
+summary(l.non_procaryote)
+#Summary of the reported data for the "T" frequencies
+summary(Tfreq_stop)
+summary(Tfreq_non_stop)
